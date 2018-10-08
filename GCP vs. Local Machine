@@ -1,0 +1,7 @@
+Option A: If you wish to run the code in the sections 3 to 14 on the Google Cloud Platform:
+
+Use the rest of section 2 to get set up with a GCP account and Datalab (to run Jupyter notebooks on the cloud)
+Option B: If you wish to run the code in the sections 3 to 14 on your local machine (and not on the GCP):
+
+Please remove the following import statement import google.datalab.ml as ml  and all references to this library to run TensorBoard (that library is specific to the GCP)
+In order to run TensorBoard switch over to your command line and run this command tensorboard --logdir=./<directory_name_here> --port 6006
